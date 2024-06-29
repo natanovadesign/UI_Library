@@ -1,0 +1,15 @@
+html {
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  justify-content: center;
+  margin: 32px;
+}
+.header__title{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+
