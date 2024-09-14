@@ -1,14 +1,17 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+const { defineSecret } = require('firebase-functions/params');
+
+const apiKey = defineSecret('API_KEY')
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDfB30j4LXIlEOyVtK8Fam2EuTn4T4Kqhk",
-  authDomain: "ui-library-ca661.firebaseapp.com",
-  projectId: "ui-library-ca661",
-  storageBucket: "ui-library-ca661.appspot.com",
-  messagingSenderId: "447072143763",
-  appId: "1:447072143763:web:c1ddd8792553fca845c066",
-  measurementId: "G-3T4ZW7W2GD"
+  apiKey: apiKey,
+  authDomain: "ui-library-d0fa7.firebaseapp.com",
+  projectId: "ui-library-d0fa7",
+  storageBucket: "ui-library-d0fa7.appspot.com",
+  messagingSenderId: "106813751860",
+  appId: "1:106813751860:web:efaad97ac25f357dd90061",
+  measurementId: "G-MYEWRJ4X0Y"
 };
 
 const app = initializeApp(firebaseConfig);

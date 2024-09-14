@@ -17,4 +17,4 @@ jobs:
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_UI_LIBRARY_CA661 }}
-          projectId: ui-library-ca661
+          projectId: ui-library-d0fa7
