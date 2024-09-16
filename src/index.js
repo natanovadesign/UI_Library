@@ -5,7 +5,7 @@ const { defineSecret } = require('firebase-functions/params');
 const apiKey = defineSecret('API_KEY')
 
 const firebaseConfig = {
-  apiKey: apiKey,
+  apiKey: "AIzaSyAq8Uw4QtQ6JLHyz4lBey-S6RUWFaFZNBM",
   authDomain: "ui-library-d0fa7.firebaseapp.com",
   projectId: "ui-library-d0fa7",
   storageBucket: "ui-library-d0fa7.appspot.com",
