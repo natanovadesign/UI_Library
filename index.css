@@ -25,7 +25,7 @@ h2 {
 
 h3 {
   font-size: 20px;
-  line-height: 120%;
+  line-height: 140%;
   font-weight: 600;
   margin: 0;
 }
@@ -41,6 +41,20 @@ p {
   font-size: 16px;
   line-height: 140%;
   font-weight: 400;
+  margin: 0;
+}
+
+a {
+  font-size: 16px;
+  line-height: 140%;
+  margin: 0;
+  font-weight: 500;
+  color:#000000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2A40FF ;
 }
 
 .header {
@@ -128,7 +142,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: linear-gradient(#FF3F42, #F93DDB);
+  background-image: linear-gradient(#FF3F42, #F16CD7);
 }
 
 .colors__card--sea-shore {
@@ -155,7 +169,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  padding-top: 10%;
+  padding-top: 20%;
   padding-right: 10%;
   gap: 16px;
 }
@@ -165,18 +179,205 @@ p {
   height: 100%;
   display: flex;
   justify-content: end;
+  padding-right: 20%;
 }
 
+.button-primary {
+  background-color: #2A40FF;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 0px;
+  cursor: pointer;
+  border-radius: 32px;
+}
+
+.button-primary:hover {
+  background-color: #000000;
+}
+
+.button-secondary {
+  background-color: #EAECFF; 
+  border: none;
+  color: #2A40FF;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 0px;
+  cursor: pointer;
+  border-radius: 32px;
+}
+
+.button-secondary:hover {
+  background-color: #EBEBEB;
+  color: #000000;
+ 
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 16px;
+}
+
+.buttons__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 16px;
+}
+
+.buttons__primary {
+  width: 560px;
+  padding-right: 10%;
+}
+
+.buttons__secondary {
+  width: 100%;
+  
+}
+
+.message{
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+  gap: 20px;
+}
+
+.message__text {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 8px;
+  width: 50%;
+  opacity: 0.75;
+  padding-top: 60px;
+}
+.description__text{
+  font-size: 14px;
+  font-weight: 350;
+  width: auto;
+  color:#606161;
+  line-height: 140%;
+}
+
+.image__card img {
+  border-radius: 12px;
+  max-width: 100%;
+  height: 240px;
+  flex: 1 1 auto;
+  object-fit: cover;
+}
+
+.image__column {
+  width: 540px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 20px 0px;
+}
+
+.art__description {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  background-color: #FAFAFA;
+}
+
+.divider{
+  background-color:#D199FA;
+  height: 2px;
+  width: auto;
+  opacity: 0.2;
+  border-radius: 4px;
+}
+
+.quote__line{
+  background-color:#D199FA;
+  height: auto;
+  width: 8px;
+  border-radius: 4px;
+}
+
+.image__prism img{
+  max-width: 100%;
+  height: auto;
+  flex: 1 1 auto;
+  object-fit: cover;
+}
+
+.image__prism {
+  display: flex;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 120px;
+}
+
+
+.star {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; 
+  margin-top: 120px;
+  margin-bottom: 60px;
+}
+
+.star__img {
+  width: 64px;
+  display: block; 
+  margin: auto; 
+  transform-origin: center;
+}
+.star__img:hover {
+  animation: rotate 1s linear infinite; 
+  transform-origin: center;
+}
 
 footer {
   display: inline-flex;
   flex-direction: row-reverse;
-  padding: 32px;
+  padding: 16px;
   width: 100%;
 }
 
-.footer_content{
+
+.footer_content {
   display: inline-flex;
+  flex-direction: row-reverse;
+  padding-top: 180px;
+  background-image: #ffffff;
+  border-radius: 16px;
+  width: 100%;
   align-items: center;
   gap: 16px;
+}
+
+.footer_content:hover {
+  background-image: linear-gradient(45deg,#D8DEFF, #F6E7FF);
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+  
 }
